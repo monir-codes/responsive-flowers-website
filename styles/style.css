@@ -64,6 +64,7 @@ padding: 0;
 
 .nav-items:last-child a{
 color:rgba(0, 0, 0, 1.00);
+transition: all 0.3s ease;
 }
 
 .fa-solid{
@@ -149,6 +150,7 @@ font-weight: 500;
     color: rgba(255, 255, 255, 1.00);
 background-color: rgba(233, 90, 8, 1.00);
 border: none;
+transition: all 0.3s ease;
 }
 
 /* Trusted Section  */
@@ -205,8 +207,135 @@ border: none;
     font-size: 22px;
 }
 
+/* Latest Deals section */
+
+.deals-text{
+    margin: 0 auto;
+width: 1140px ;
+height: 137px;
+display: flex;
+flex-direction: column;
+text-align: center;
+} 
+
+.deals-text h2{
+font-size: 3.12rem;
+} 
+.deals-text p{
+    width: 888px ;
+    height: 53px;
+    font-size: 22px;
+    margin: 10px auto;
+}
+
+.deals-imgs{
+    opacity: 0.8;
+    margin: 50px auto;
+    max-width: 1140px;
+    /* max-height: 423px; */
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(2,1fr);
+  
+}
+
+.deals-imgs .dual{
+    width: calc((100% - 50px)/20%);
+    /* border: 2px solid red; */
+    margin: 10px auto;
+    display: grid;
+    align-items: center;
+    
+}
+.deals-imgs .dual img{
+    filter: brightness(60%) contrast(120%);
+    border-radius: 15px;
+}
+.deals-imgs .single{
+    max-width: 1140px;
+  /*  height: 100%; */
+    margin: 20px auto;
+}
+
+.deals-imgs .single img{
+        border-radius: 15px;
+    filter: brightness(60%) contrast(120%);
+}
+#bloom{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    top: -430px;
+    left:0px;
+    position: relative;
+}
+
+.bloom-cont {
+    text-align: center;
+}
+
+.bloom-cont .bloom-span a{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#ana{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    top: -210px;
+    left:-630px;
+    position: relative;
+}
+
+.ana-cont {
+    text-align: center;
+}
+
+.ana-cont .ana-span a{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#zabo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    top: -450px;
+    left: 240px;
+    position: relative;
+}
+.zabo-cont {
+    text-align: center;
+}
+.zabo-cont .zabo-span a{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
 
 
+
+/* Hover Section  */
+
+.plant-cards .plant-btn:hover{
+    background-color:rgba(200, 70, 5, 1.00);
+    /* background: linear-gradient(to right, #e95a08, #c44600); */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.join-child2 .join-btn:hover{
+ background-color:rgba(200, 70, 5, 1.00);
+    /* background: linear-gradient(to right, #e95a08, #c44600); */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
 /* Responsive Media Query */
 
@@ -241,7 +370,10 @@ display: none;
 font-size: 20px;
 padding-top: 30px;
 }
-
+#cart a:hover{
+color: rgba(200, 70, 5, 1.00);
+font-size: 1.2rem;
+}
 .fa-solid{
     color: rgba(0, 0, 0, 1.00);
     margin-right: 5px;
